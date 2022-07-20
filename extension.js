@@ -1,6 +1,5 @@
-const vscode = require('vscode');
-const utils = require('./utils');
-
+const vscode = require('vscode')
+const utils = require('./utils')
 
 /**
  * Function called on activation of the extension.
@@ -34,8 +33,6 @@ function activate(context) {
     context.subscriptions.push(cutToNewDocCommand);
     context.subscriptions.push(copyToNewDocCommand);
 }
-
-exports.activate = activate;
 
 function deactivate() { }
 
